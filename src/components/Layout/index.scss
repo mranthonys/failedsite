@@ -10,12 +10,14 @@
 }
 
 .tags {
-    color: #022c23;
+    color: black;
     position: relative;
     bottom: 0;
     left: 120px;
     font-size: 18px;
     font-family: 'La Belle Aurore';
+    opacity: 0.6;
+    animation: fadeIn 1s 1.7s backwards;
 }
 
 .bottom-tags {
