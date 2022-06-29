@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import './index.scss';
 import LetterAnimation from '../LetterAnimation'
 import {useState, useEffect} from 'react'
+
 const Home = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
     const firstLineArray = ['A', 'n', 't', 'h', 'o','n', 'y', ' ',
