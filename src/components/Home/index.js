@@ -19,10 +19,10 @@ const Home = () => {
         <div className="text-zone">
             <h1>
             <span className={letterClass}>H</span>
-            <span className={`${letterClass} _12`}>i, </span>
+            <span className={`${letterClass} _12`}>i, &nbsp;</span>
 
             <span className={`${letterClass} _13`}>I</span>
-            <span className={`${letterClass} _14`}>'m </span>
+            <span className={`${letterClass} _14`}>'m &nbsp;</span>
             <LetterAnimation letterClass={letterClass} strArray={firstLineArray} idx={15}/>
               <br />
             <img src={LogoTitle} alt="developer" />
