@@ -1,6 +1,8 @@
 import './index.scss'
 import LetterAnimation from '../LetterAnimation'
 import { useState, useEffect } from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCss3, faHtml5, faReact, faJsSquare, faGitAlt } from '@fortawesome/free-brands-svg-icons'
 
 const About = () => {
 
@@ -8,7 +10,7 @@ const About = () => {
     useEffect(() => {
         setTimeout(() => {
          setLetterClass('text-animate-hover')
-        }, 4000)
+        }, 2000)
     },[])
     
 
@@ -42,6 +44,26 @@ const About = () => {
                    My dream is to take my skills and join an established IT company or Start-Up and 
                    continue this wonderful journey into the next level.
                 </p>
+            </div>
+
+            <div className='cubeContainer'>
+                <div className='cubeAnimate'>
+                    <div className='cubeOne'>
+                        <FontAwesomeIcon icon={faHtml5} color="#F06529"/>
+                    </div>
+                    <div className='cubeTwo'>
+                        <FontAwesomeIcon icon={faCss3} color="#28A4D9"/>
+                    </div>
+                    <div className='cubeThree' icon={faReact} color="#5ED4F4">
+                        <FontAwesomeIcon />
+                    </div>
+                    <div className='cubeFour'>
+                        <FontAwesomeIcon icon={faJsSquare} color="#EFD81D"/>
+                    </div>
+                    <div className='cubeFive'>
+                        <FontAwesomeIcon icon={faGitAlt} color="#EC4D28"/>
+                    </div>
+                </div>
             </div>
         </div>
     )
