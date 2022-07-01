@@ -2,7 +2,7 @@ import './index.scss'
 import LetterAnimation from '../LetterAnimation'
 import { useState, useEffect } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCss3, faHtml5, faReact, faJsSquare, faGitAlt } from '@fortawesome/free-brands-svg-icons'
+import { faCss3, faHtml5, faReact, faJsSquare, faGitAlt, faPython } from '@fortawesome/free-brands-svg-icons'
 
 
 const About = () => {
@@ -49,19 +49,23 @@ const About = () => {
 
             <div className='cubeContainer'>
                 <div className='cubeAnimate'>
-                    <div className='cubeOne'>
+
+                    <div className='cube1'>
+                        <FontAwesomeIcon icon={faPython} color="#F06529"/>
+                    </div>
+                    <div className='cube2'>
                         <FontAwesomeIcon icon={faHtml5} color="#F06529"/>
                     </div>
-                    <div className='cubeTwo'>
+                    <div className='cube3'>
                         <FontAwesomeIcon icon={faCss3} color="#28A4D9"/>
                     </div>
-                    <div className='cubeThree' icon={faReact} color="#5ED4F4">
+                    <div className='cube4' icon={faReact} color="#5ED4F4">
                         <FontAwesomeIcon />
                     </div>
-                    <div className='cubeFour'>
+                    <div className='cube5'>
                         <FontAwesomeIcon icon={faJsSquare} color="#EFD81D"/>
                     </div>
-                    <div className='cubeFive'>
+                    <div className='cube6'>
                         <FontAwesomeIcon icon={faGitAlt} color="#EC4D28"/>
                     </div>
                 </div>

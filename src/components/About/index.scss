@@ -32,23 +32,27 @@
         box-shadow: 0 0 20px 0px lightyellow;
       }
 
-    .cubeOne {
+      .cube1 {
+        transform: translateZ(100px);
+        color: #dd0031;
+      }
+      .cube2 {
         transform: rotateY(90deg) translateZ(100px);
         color: #f06529;
       }
-    .cubeTwo {
+      .cube3 {
         transform: rotateY(90deg) rotateX(90deg) translateZ(100px);
         color: #28a4d9;
       }
-    .cubeThree {
+      .cube4 {
         transform: rotateY(180deg) rotateZ(90deg) translateZ(100px);
         color: #5ed4f4;
       }
-    .cubeFour {
+      .cube5 {
         transform: rotateY(-90deg) rotateZ(90deg) translateZ(100px);
         color: #efd81d;
       }
-    .cubeFive {
+      .cube6 {
         transform: rotateX(-90deg) translateZ(100px);
         color: #ec4d28;
       }
