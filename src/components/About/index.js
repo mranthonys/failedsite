@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCss3, faHtml5, faReact, faJsSquare, faGitAlt } from '@fortawesome/free-brands-svg-icons'
 
+
 const About = () => {
 
     const [letterClass, setLetterClass] = useState('text-animate')
