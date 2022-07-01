@@ -13,7 +13,7 @@ const Home = () => {
     useEffect(() => {
       setTimeout(() => {
        setLetterClass('text-animate-hover')
-      }, 2000)
+      }, 4000)
     }, [])
     return (
       <div className="container home-page">
