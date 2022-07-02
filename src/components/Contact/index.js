@@ -1,15 +1,39 @@
 import './index.scss';
 import LetterAnimation from '../LetterAnimation';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
+import emailjs from '@emailjs/browser'
 
-
-const Contact = () => {
+export const Contact = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
+    const form = useRef ()
+
     useEffect(() => {
         setTimeout(() => {
          setLetterClass('text-animate-hover')
         }, 3000)
     },[])
+
+    const sendEmail = (e) => {
+        e.preventDefault()
+
+        emailjs.sendForm(
+                'service_twfc313',
+                'template_25cmydj',
+                // 'name, email, subject, message',
+                form.current, 
+                'uefnEY1r_ZheGLdIb'
+            )
+            .then(
+                () => {
+                    alert('Message Sent!')
+                    window.location.reload(false)
+                }, 
+                () => {
+                    alert('Uh Oh...Failed to Send')
+                }
+            )
+    }
+
 return (
     <div className='container contactPage'>
         <div className='text-zone'>
@@ -21,12 +45,12 @@ return (
                     />
             </h1>
             <p>
-                I am interested in Full-time or contract to hire opportunities either as a Jr. Developer or support personell. 
+                I am interested in Full-time or contract to hire opportunities either as a Jr. Developer or support personel. 
                 If you have enjoyed the work you see here or simply have questions, constructive advice, 
                 or comments, please don't hesitate to reach out!
             </p>
             <div className='contactForm'>
-                <form>
+                <form ref={form} onSubmit={sendEmail}>
                     <ul>
                         <li className='partial'>
                             <input type="text" name="name" placeholder="Name" required />
@@ -43,7 +67,7 @@ return (
                         <li>
                             <input type="submit" className='flat-button' value="Send" />
                         </li>
-                    </ul>
+                    </ul>                   
                 </form>
             </div>
         </div>
