@@ -1,5 +1,5 @@
 .nav-bar {
-  background: #181818;
+  background:#D1B800;
   width: 60px;
   height: 100%;
   position: absolute;
@@ -35,7 +35,7 @@
 
     a {
       font-size: 22px;
-      color: #4d4d4e;
+      color: #181D2f;
       display: block;
       line-height: 51px;
       height: 51px;
@@ -47,14 +47,14 @@
       }
 
       &:hover {
-        color: #ffd700;
+        color: #F4f9E8;
 
         svg {
           opacity: 0;
         }
 
         &:after {
-          opacity: 1;
+          opacity: 2;
         }
       }
 
@@ -99,31 +99,39 @@
 
     a.active {
       svg {
-        color: #ffd700;
+        color: #181D2f;
       }
     }
   }
-
+.wrapper {
+    position: absolute; 
+    display: inline-block;
+    bottom: 0;
+    margin-bottom: 10px;
   ul {
     width: 100%;
-    display: block;
+    display: inline-block;
     padding: 0;
     list-style: none;
     text-align: center;
     margin: 0;
-
+        
     li {
+      bottom: 0;
       a {
+        
         padding: 7px 0;
         display: inline-block;
         font-size: 15px;
+        font-style: bold;
         line-height: 16px;
-        color: #4d4d4e;
+        color: #181d2f;
 
         &:hover svg {
-          color: #ffd700;
+          color: #F4F9E8;
         }
       }
     }
   }
+}
 }
