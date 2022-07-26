@@ -1,8 +1,9 @@
-import LogoTitle from '../../assets/images/logo-a.png';
+import Background from '../../assets/images/bgImage.png';
 import { Link } from 'react-router-dom';
 import './index.scss';
 import LetterAnimation from '../LetterAnimation'
 import {useState, useEffect} from 'react'
+
 
 const Home = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
@@ -16,7 +17,8 @@ const Home = () => {
       }, 4000)
     }, [])
     return (
-      <div className="container home-page">
+      <div 
+      className="container home-page">
         <div className="text-zone">
             <h1>
             <span className={letterClass}>H</span>
@@ -25,8 +27,8 @@ const Home = () => {
             <span className={`${letterClass} _13`}>I</span>
             <span className={`${letterClass} _14`}>'m&nbsp;</span>
             <LetterAnimation letterClass={letterClass} strArray={firstLineArray} idx={15}/>
-              <br />
-            <img src={LogoTitle} alt="developer" />
+            
+            <img src={Background} alt="developer" />
             <br/>
             <LetterAnimation letterClass={letterClass} strArray={secondLineArray} idx={22} />
             </h1>

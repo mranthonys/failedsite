@@ -1,13 +1,21 @@
 .home-page {
+    
+        // background-image: url(../../assets/images/Background-1.png);
+        // background-size: 350px 400px;
+        // background-repeat: no-repeat;
+        // background-position: left bottom;
+        // background-origin: initial;
+    
+     
 
     .text-zone {
-        position: relative;
-        left: 30%;
-        top: 45%;
+        position: absolute;
+        left: 10%;
+        top: 50%;
         transform: translateY(-50%);
-        font-size: medium;
-        width: 60%;
-        max-height: 80%;
+        font-size:x-large;
+        width: 80%;
+        max-height: 100%;
         color: #F4F9E8;
     }
     h1 {
@@ -35,7 +43,11 @@
             animation: fadeIn 1s 1.7s backwards;
         }
         img {
-            width: 300px;
+            width: 500px;
+            position: absolute;
+            left: 50%;
+            top: 20%;
+            opacity: .9;
         }
     }
 
@@ -65,3 +77,4 @@
     }
 
 }
+
