@@ -1,0 +1,31 @@
+@media screen and (max-width: 480px) {
+    .home-page {
+        box-sizing: border-box;
+        width: 100vw;
+        max-height: 100vw;
+        .text-zone {
+            box-sizing: inherit;
+            position: absolute;
+            left: 25%;
+            top: 25%;
+            font-size: 3vw;
+            width: 70vw;
+        }
+        h1 {
+            box-sizing: border-box;
+        }
+        .imgDiv{box-sizing: border-box;
+            position: absolute;
+            right: 0px;
+            bottom: 0px;
+            width: 200px;
+            height: 200px;
+            img {
+                box-sizing: inherit;
+                width: 200px;
+                position: absolute;
+                right: 0;
+            }
+        }    
+    }
+}

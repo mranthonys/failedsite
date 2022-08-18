@@ -1,0 +1,46 @@
+@media screen and (max-width: 480px) {
+   .App {
+        box-sizing: border-box;
+        width: 100vw;
+        height: 100vw;
+        .page {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            box-sizing: border-box;
+        }
+    }
+    
+    .container {
+        box-sizing: border-box;
+        width: 48%;
+        max-width: 100vw;
+        max-height: 100vw;
+    }
+    
+
+    .aboutPage,
+    .contactPage {
+      width: 100vw;
+      height: 100vw;
+      text-align: center;
+      box-sizing: border-box;
+      display: block;
+        h1 {
+          display: inline-block;
+          font-size: 5vw;
+          }
+          p {
+            font-size: 2.5vw;
+            font-weight: 600;
+          }
+      
+        .text-zone {
+          position: absolute;
+          top: 32%;
+          left: 20%;
+          width: 75vw;
+          
+        }
+    } 
+}

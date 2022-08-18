@@ -1,9 +1,9 @@
-import Background from '../../assets/images/bgImage.png';
-import { Link } from 'react-router-dom';
 import './index.scss';
-import LetterAnimation from '../LetterAnimation'
-import {useState, useEffect} from 'react'
-
+import './media.scss';
+import Background from '../../assets/images/BGimage2.png';
+import { Link } from 'react-router-dom';
+import LetterAnimation from '../LetterAnimation';
+import {useState, useEffect} from 'react';
 
 const Home = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
@@ -17,6 +17,7 @@ const Home = () => {
       }, 4000)
     }, [])
     return (
+      
       <div 
       className="container home-page">
         <div className="text-zone">
@@ -28,12 +29,14 @@ const Home = () => {
             <span className={`${letterClass} _14`}>'m&nbsp;</span>
             <LetterAnimation letterClass={letterClass} strArray={firstLineArray} idx={15}/>
             
-            <img src={Background} alt="developer" />
             <br/>
             <LetterAnimation letterClass={letterClass} strArray={secondLineArray} idx={22} />
             </h1>
             <h2>Frontend Developer / JavaScript Enthusiast / Child At Heart</h2>
             <Link to="/contact" className='flat-button'>CONTACT ME</Link>
+        </div>
+        <div className="imgDiv">
+        <img src={Background} alt="developer" />
         </div>
       </div>  
     );

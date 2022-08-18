@@ -1,0 +1,50 @@
+@media screen and (max-width: 480px) {
+    .container {
+        box-sizing: border-box;
+        width: 100vw;
+        max-height: 100vw;
+    }
+
+    .contactForm {
+        box-sizing: inherit;
+        width: 70vw;
+        margin-top: 10px;
+        align-items: center;
+
+        input[type='text'],
+        input[type='email'] {
+            height: 25px;
+            padding: 0 20px;
+        }
+
+        textarea {
+            height: 50px;
+            padding: 20px;
+            min-height: 75px;
+        }
+
+        li { 
+            .flat-button {
+                letter-spacing: 1px;
+                padding: 5px;
+                float: left;
+                width: 20vw;
+            }
+        }
+    }
+
+    .mapInfo {
+    display: none;
+    box-sizing: inherit;
+    }
+
+    .mapWrap {
+        display: inline-block;
+        float: none;
+        width: 85%;
+        height: 35%;
+        margin-left: 10%;
+        margin-top: 100vw;
+        top: 60vw;
+    }
+}

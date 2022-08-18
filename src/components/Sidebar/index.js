@@ -1,14 +1,15 @@
-import './index.scss'
-import { Link, NavLink } from 'react-router-dom'
-import LogoS from '../../assets/images/logo-finalC.png'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHome, faUser, faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import './index.scss';
+import './media.scss';
+import { Link, NavLink } from 'react-router-dom';
+import LogoS from '../../assets/images/logo-finalC.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHome, faUser, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { 
     faGithub, 
     faInstagram, 
     faLinkedin, 
     faTwitter 
-} from '@fortawesome/free-brands-svg-icons'
+} from '@fortawesome/free-brands-svg-icons';
 
 const Sidebar = () => (
     <div className='nav-bar'>

@@ -1,8 +1,9 @@
-import './index.scss'
-import LetterAnimation from '../LetterAnimation'
-import { useState, useEffect } from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCss3, faHtml5, faReact, faJsSquare, faGitAlt, faPython } from '@fortawesome/free-brands-svg-icons'
+import './index.scss';
+import './media.scss';
+import LetterAnimation from '../LetterAnimation';
+import { useState, useEffect } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCss3, faHtml5, faReact, faJsSquare, faGitAlt, faPython } from '@fortawesome/free-brands-svg-icons';
 
 
 const About = () => {
